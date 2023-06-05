@@ -1,0 +1,56 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x555a32d787a0 .scope module, "program1_tb" "program1_tb" 2 2;
+ .timescale 0 0;
+v0x555a32d89670_0 .var "A", 0 0;
+v0x555a32d89740_0 .var "B", 0 0;
+v0x555a32d89810_0 .net "Y", 0 0, L_0x555a32d89910;  1 drivers
+S_0x555a32d78920 .scope module, "ag" "and_gate" 2 5, 3 1 0, S_0x555a32d787a0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "Y"
+    .port_info 1 /INPUT 1 "A"
+    .port_info 2 /INPUT 1 "B"
+L_0x555a32d89910 .functor AND 1, v0x555a32d89670_0, v0x555a32d89740_0, C4<1>, C4<1>;
+v0x555a32d78af0_0 .net "A", 0 0, v0x555a32d89670_0;  1 drivers
+v0x555a32d89490_0 .net "B", 0 0, v0x555a32d89740_0;  1 drivers
+v0x555a32d89550_0 .net "Y", 0 0, L_0x555a32d89910;  alias, 1 drivers
+    .scope S_0x555a32d787a0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x555a32d89670_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x555a32d89740_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x555a32d89670_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x555a32d89740_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x555a32d89670_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x555a32d89740_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x555a32d89670_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x555a32d89740_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x555a32d787a0;
+T_1 ;
+    %vpi_call 2 13 "$monitor", "%t | A= %d | B= %d | Y= %d", $time, v0x555a32d89670_0, v0x555a32d89740_0, v0x555a32d89810_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "program2_tb.v";
+    "./program2.v";

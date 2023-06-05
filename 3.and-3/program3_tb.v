@@ -1,7 +1,7 @@
 `include "program3.v"
 module program1_tb();
-reg A,B;
-wire Y;
+wire  A,B;
+reg Y;
 and_gate ag(Y,A,B);
 initial begin
 	A=0;B=0;
