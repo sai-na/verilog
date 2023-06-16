@@ -2,7 +2,7 @@ module half(
   output reg S,
   output reg C,
   input A,
-  input B
+  input B,
 );
   always @* begin
     if (A != B) begin

@@ -14,3 +14,4 @@ $display("Half Adder Truth Table");
 $monitor("%t |A = %d|B = %d|S = %d|C = %d",$time,A,B,S,C);
 end
 endmodule
+

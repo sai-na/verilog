@@ -4,7 +4,7 @@ module full(
   output reg C,
   input A,
   input B,
-  input Cin
+  input Cin,
 );
   wire w1, w2, w3;
 

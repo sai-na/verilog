@@ -1,5 +1,5 @@
 `include "program2.v"
-module program1_tb();
+module program2_tb();
 reg A,B;
 wire Y;
 and_gate ag(Y,A,B);
