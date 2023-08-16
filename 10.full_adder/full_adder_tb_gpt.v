@@ -1,5 +1,5 @@
 // Include the full_adder1.v module
-include "full_adder1.v"
+`include "full_adder1.v"
 
 // Define the testbench module
 module full_adder_tb;
