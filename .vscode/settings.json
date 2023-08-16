@@ -1,3 +1,4 @@
 {
-  "cSpell.enableFiletypes": ["verilog"]
+  "cSpell.enableFiletypes": ["verilog"],
+  "cSpell.words": ["endmodule"]
 }
