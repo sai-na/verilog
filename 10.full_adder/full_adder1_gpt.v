@@ -1,5 +1,5 @@
 // Include the half_adder.v module
-include "../9.half_adder/half_adder_gpt.v"
+`include "../9.half_adder/half_adder_gpt.v"
 
 // Define the full adder module
 module full (

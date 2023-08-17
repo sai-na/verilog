@@ -1,5 +1,5 @@
 // Include the demux.v module
-include "demux_gpt.v"
+`include "demux_gpt.v"
 
 // Define the testbench module
 module demuxtest;
